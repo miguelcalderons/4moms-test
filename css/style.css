@@ -34,8 +34,46 @@
     padding: 0;
     height: 100px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); }
+    @media screen and (max-width: 560px) {
+      #header .header.hide-mobile {
+        display: none; } }
+    #header .header.show-mobile {
+      display: none; }
+      @media screen and (max-width: 560px) {
+        #header .header.show-mobile {
+          display: block;
+          padding: 30px 0; }
+          #header .header.show-mobile a.navbar-brand {
+            margin-left: 50px; } }
+    #header .header ul.mobile-items {
+      position: absolute;
+      right: 0;
+      top: 40px; }
+      #header .header ul.mobile-items.left {
+        top: 40px;
+        left: 30px; }
+      #header .header ul.mobile-items li {
+        list-style: none;
+        float: left;
+        margin-right: 20px; }
     #header .header div#navbarToggle {
       padding: 0 95px; }
+      @media screen and (max-width: 560px) {
+        #header .header div#navbarToggle {
+          background-color: #ffffff;
+          padding: 23px; }
+          #header .header div#navbarToggle.show {
+            top: 140px;
+            width: 300px; }
+          #header .header div#navbarToggle li.nav-item a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 48px;
+            /* or 320% */
+            letter-spacing: 0.05em;
+            color: #000000;
+            text-align: left; } }
       #header .header div#navbarToggle .dropdown.full-width-dropdown {
         position: static !important; }
         #header .header div#navbarToggle .dropdown.full-width-dropdown .dropdown-menu {
@@ -70,6 +108,25 @@
           #header .header div#navbarToggle #country .dropdown-item:hover {
             background-color: #000000;
             color: #ffffff; }
+    @media (max-width: 768px) {
+      #header .header .navbar-collapse {
+        position: fixed;
+        top: 140px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        height: 100%; }
+      #header .header .navbar-collapse.collapsing {
+        height: 100%;
+        left: -75%;
+        transition: height 0s ease; }
+      #header .header .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 400ms ease-in-out; }
+      #header .header .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 400ms ease-in; } }
 
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {

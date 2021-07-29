@@ -16,17 +16,12 @@
     <div class="top-header">
         <p>Free shipping on orders over $49</p>
     </div>
-    <nav class="header navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="header navbar navbar-expand-lg navbar-light bg-light hide-mobile">
         <!--  Show this only on mobile to medium screens  -->
         <a class="navbar-brand d-lg-none" href="#">Navbar</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
         <!--  Use flexbox utility classes to change how the child elements are justified  -->
-        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+        <div class="collapse navbar-collapse justify-content-between">
 
             <ul class="navbar-nav col-sm-4">
                 <li class="nav-item dropdown">
@@ -67,6 +62,64 @@
                     <a class="nav-link" href="#"><img src="imgs/cart.svg"></a>
                 </li>
 
+            </ul>
+        </div>
+    </nav>
+    <nav class="header navbar navbar-expand-lg navbar-light bg-light show-mobile">
+        <!--  Show this only on mobile to medium screens  -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="mobile-items left">
+            <li>
+                <a><img src="imgs/account.svg" /></a>
+            </li>
+        </ul>
+        <a class="navbar-brand d-lg-none" href="#"><img src="imgs/logo.svg"/></a>
+
+        <ul class="mobile-items">
+            <li>
+                <a><img src="imgs/search.svg" /></a>
+            </li>
+            <li>
+                <a><img src="imgs/cart.svg" /></a>
+            </li>
+        </ul>
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+            <ul class="navbar-nav col-sm-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Playards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Feeding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bassinets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bath</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mobile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accesories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Spare Parts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About 4moms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -159,7 +212,7 @@
 <section id="rock">
     <div class="row row-flex">
         <div class="content col-sm-6">
-            <img src="imgs/rock.png" />
+            <img src="imgs/rock.png"/>
             <h5>rockaRoo®</h5>
             <p>Back and forth gliding motion babies love, in a compact size.</p>
             <a href="#" class="principal-button">Shop Now</a>

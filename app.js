@@ -3,5 +3,6 @@ jQuery(document).ready(function ($) {
 
     $('#country .dropdown-item').click(function () {
         $('#country .nav-link.dropdown-toggle').text($(this).text());
-    })
+    });
+
 });

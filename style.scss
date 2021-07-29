@@ -45,8 +45,68 @@
     height: 100px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
 
+    &.hide-mobile {
+      @media screen and (max-width: 560px) {
+        display: none;
+      }
+    }
+
+    &.show-mobile {
+      display: none;
+      @media screen and (max-width: 560px) {
+        display: block;
+        padding: 30px 0;
+
+        a.navbar-brand {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    ul.mobile-items {
+      position: absolute;
+      right: 0;
+      top: 40px;
+
+      &.left {
+        top: 40px;
+        left: 30px;
+      }
+
+      li {
+        list-style: none;
+        float: left;
+        margin-right: 20px;
+      }
+    }
+
     div#navbarToggle {
       padding: 0 95px;
+
+      @media screen and (max-width: 560px) {
+        background-color: #ffffff;
+        padding: 23px;
+        &.show {
+          top: 140px;
+          width: 300px;
+        }
+
+        li.nav-item {
+          a {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 48px;
+            /* or 320% */
+
+            letter-spacing: 0.05em;
+
+            color: #000000;
+            text-align: left;
+          }
+        }
+      }
+
 
       .dropdown {
         &.full-width-dropdown {
@@ -104,7 +164,36 @@
         }
       }
     }
+
+    @media (max-width: 768px) {
+      .navbar-collapse {
+        position: fixed;
+        top: 140px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        height: 100%;
+      }
+
+      .navbar-collapse.collapsing {
+        height: 100%;
+        left: -75%;
+        transition: height 0s ease;
+      }
+
+      .navbar-collapse.show {
+        height: 100%;
+        left: 0;
+        transition: left 400ms ease-in-out;
+      }
+
+      .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 400ms ease-in;
+      }
+    }
   }
+
 }
 
 @media all and (min-width: 992px) {
@@ -120,6 +209,7 @@
     margin-top: 0;
   }
 }
+
 
 /* End Header section */
 
@@ -297,6 +387,7 @@ p {
 
 #rock {
   padding: 65px 0;
+
   .col-sm-6 {
     text-align: center;
     display: flex;
