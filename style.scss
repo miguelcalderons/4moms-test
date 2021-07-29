@@ -19,7 +19,7 @@
 
 /* Header section */
 #header {
-  padding: 0!important;
+  padding: 0 !important;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -205,8 +205,93 @@ section {
       color: #222222;
     }
 
-    p{
+    p {
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 150%;
+      /* or 22px */
 
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #636363;
+    }
+  }
+}
+
+#categories {
+  padding: 0 60px;
+
+  .cat {
+    background: #F2F2F2;
+    mix-blend-mode: multiply;
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid #ffffff;
+    padding: 60px 40px 40px 40px;
+
+    &.first {
+      border-right: 3px solid #ffffff;
+    }
+
+    a.cat-title {
+      position: absolute;
+      top: 40px;
+      left: 30px;
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 27px;
+      /* identical to box height */
+
+      letter-spacing: 0.05em;
+
+      color: #000000;
+
+      text-shadow: 0 0 17px rgba(0, 0, 0, 0.1);
+
+      &::after {
+        position: absolute;
+        content: url("../imgs/arrow.svg");
+        right: -20px;
+        top: 2px;
+      }
+    }
+
+    img {
+      max-height: 450px;
+      max-width: 100%;
+      vertical-align: center;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 0;
+    .cat {
+      display: flex;
+      padding: 20px;
+      align-items: center;
+      height: 150px;
+
+      a.cat-title {
+        position: relative;
+        top: 0;
+        left: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+
+        letter-spacing: 0.05em;
+      }
+
+      img {
+        float: right;
+        max-width: 50%;
+        max-height: 230px;
+      }
     }
   }
 }
