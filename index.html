@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/e1ec8b0752.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>4 Moms</title>
+</head>
+<body>
+<!-- Header -->
+<section id="header">
+    <div class="top-header">
+        <p>Free shipping on orders over $49</p>
+    </div>
+    <nav class="header navbar navbar-expand-lg navbar-light bg-light">
+        <!--  Show this only on mobile to medium screens  -->
+        <a class="navbar-brand d-lg-none" href="#">Navbar</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+            <ul class="navbar-nav col-sm-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About 4moms</a>
+                </li>
+            </ul>
+
+            <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-lg-block col-sm-4" href="#"><img src="imgs/logo.svg"/></a>
+
+            <ul class="navbar-nav col-sm-4">
+                <li id="country" class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Country</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"> United States</a></li>
+                        <li><a class="dropdown-item" href="#"> Canada </a></li>
+                        <li><a class="dropdown-item" href="#"> United Kingdom </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="imgs/search.svg"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="imgs/account.svg"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="imgs/cart.svg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</section>
+<!-- End Header -->
+
+<!-- Hero Section  -->
+<section id="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 page-hero flex-column d-flex justify-content-center">
+                <img src="imgs/sleepFront.png"/>
+            </div>
+            <div class="col-sm-6 page-hero flex-column d-flex align-items-end justify-content-center">
+                <h1>Freeing up your hands. <br/>So you can do more.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit. Aenean euismod bibendum <br/>laoreet.
+                </p>
+                <a class="button" href="#">Shop Bassinets</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Hero Section  -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
