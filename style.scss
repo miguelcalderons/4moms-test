@@ -166,6 +166,31 @@ section {
   padding: 65px;
 }
 
+h5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #222222;
+}
+
+p {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  /* or 22px */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #636363;
+}
+
 .principal-button {
   background: #000000;
   border-radius: 10px;
@@ -176,7 +201,6 @@ section {
   letter-spacing: 0.05em;
   padding: 15px 57px;
   text-decoration: none;
-
   color: #FFFFFF;
 
   &:hover {
@@ -190,31 +214,6 @@ section {
   .icons {
     img {
       margin-bottom: 20px;
-    }
-
-    h5 {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 150%;
-      /* identical to box height, or 27px */
-
-      text-align: center;
-      letter-spacing: 0.05em;
-
-      color: #222222;
-    }
-
-    p {
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 150%;
-      /* or 22px */
-
-      text-align: center;
-      letter-spacing: 0.05em;
-
-      color: #636363;
     }
   }
 }
@@ -292,6 +291,41 @@ section {
         max-width: 50%;
         max-height: 230px;
       }
+    }
+  }
+}
+
+#rock {
+  padding: 65px 0;
+  .col-sm-6 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+    &.content {
+      background: #FAFAFA;
+      padding: 56px;
+
+      @media screen and (max-width: 560px) {
+        order: 2;
+      }
+    }
+
+    &.image {
+      background-image: url("../imgs/rockBg.png");
+      background-size: cover;
+
+      @media screen and (max-width: 560px) {
+        min-height: 375px;
+        order: 1;
+      }
+    }
+
+    p {
+      max-width: 220px;
     }
   }
 }
